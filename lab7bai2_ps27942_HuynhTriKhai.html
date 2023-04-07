@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+  <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    td>input.form-control {
+      margin-top: 18%;
+    }
+
+    .list-group-item {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .list-group-item>p {
+      margin-top: 3%;
+    }
+    .button1{
+    width: 15%;
+    aspect-ratio: 10/3;
+    }
+    @media screen and (max-width:768px) {
+      div.a {
+        justify-content: center;
+      }
+      .button1{
+        width: 30%;
+        aspect-ratio: 15/5;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success bg-gradient fixed-top" style="margin-bottom: 0.5%;">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="lab7bai1_ps27942_HuynhTriKhai.html"><svg style="width: 2vmax;fill: aliceblue;"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M36.8 192H603.2c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0H121.7c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224V384v80c0 26.5 21.5 48 48 48H336c26.5 0 48-21.5 48-48V384 224H320V384H128V224H64zm448 0V480c0 17.7 14.3 32 32 32s32-14.3 32-32V224H512z" />
+          </svg></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="lab7bai1_ps27942_HuynhTriKhai.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                New Product
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#" tabindex="-1">All Page Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a href="lab7bai2.html" class="text-white"
+              style=" justify-content: space-between;width: 50%; text-decoration: none;"><img src="shopping-cart.png"
+                alt="" style="width: 2vmax;margin-right: 5%;">CART</a>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success text-white" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-light" style="margin-top: 5%;">
+      <div class="col" style="display: flex; justify-content: space-between;">
+        <h6><img src="cart-shopping-solid.svg" alt="" srcset="" style="width: 10%;aspect-ratio: 10/10;"> SHOPPING CART
+        </h6>
+        <p> <a href=" " style="text-decoration: none;color: black;">BACK TO PAGE</a> </p>
+      </div>
+    </div>
+
+    <div class="row bg-light">
+      <div class="col-lg-9 col-md-12 table-responsive">
+
+        <table class="table" style="border: 1px;">
+          <thead class="bg-secondary">
+            <tr>
+              <th scope="col" style="max-width: 20%;">PRODUCT</th>
+              <th scope="col" style="min-width: 30%;">Details</th>
+              <th scope="col" style="min-width: 15%;">DELETE</th>
+              <th scope="col" style="min-width: 10%;">QNT</th>
+              <th scope="col" style="min-width: 10%;">DISCOUNT</th>
+              <th scope="col" style="min-width: 15%;">TOTAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 15%;"><img
+                  src="https://static.wikia.nocookie.net/fategrandorder/images/f/fb/S091_Stage1.webp/revision/latest/scale-to-width-down/350?cb=20220910155645"
+                  alt="" srcset="" style="max-width: 100%;aspect-ratio: 10/14;"></td>
+              <td style="width: 30%;">Ryōgi Shiki (Saber) <br> Voice Actor: Sakamoto Maaya <br> Illustrator: Takeuchi
+                Takashi</td>
+              <td style="width: 15%;"><a href=""><img src="trash-solid.svg" alt=""
+                    style="width: 30%;margin-top: 10%;"></a></td>
+              <td style="width: 10%;"><input class="form-control" value="1" type="text"
+                  aria-label="default input example" style="width: 70%;padding: 5%;"></td>
+              <td class="normal" style="width: 10%;">
+                <p style="margin-top: 8%;">0</p>
+              </td>
+              <td class="normal" style="width: 15%;">
+                <p style="margin-top: 13%;">$5000</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 15%;"><img
+                  src="https://static.wikia.nocookie.net/fategrandorder/images/7/78/AF0094.png/revision/latest/scale-to-width-down/112?cb=20180428132552"
+                  alt="" srcset="" style="max-width: 100%;aspect-ratio: 10/14;"></td>
+              <td style="width: 30%;">Astolfo <br> AKA: Knight of Evaporated Sanity <br> Voice Actor: Ookubo Rumi <br>
+                Illustrator: Konoe Ototsugu</td>
+              <td style="width: 15%;"><a href=""><img src="trash-solid.svg" alt=""
+                    style="width: 30%;margin-top: 10%;"></a></td>
+              <td style="width: 10%;"><input class="form-control" type="text" aria-label="default input example"
+                  value="1" style="width: 70%;padding: 5%;"></td>
+              <td class="normal" style="width: 10%;">
+                <p style="margin-top: 8%;">0</p>
+              </td>
+              <td class="normal" style="width: 15%;">
+                <p style="margin-top: 13%;">$8000</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 15%;"><img
+                  src="https://static.wikia.nocookie.net/fategrandorder/images/0/01/Lancercardborder34.webp/revision/latest/scale-to-width-down/130?cb=20221104110512"
+                  alt="" srcset="" style="max-width: 100%;aspect-ratio: 10/14;"></td>
+              <td style="width: 30%;">Meltryllis <br> Voice Actor: Hayami Saori <br> Illustrator: Wada Arco </td>
+              <td style="width: 15%;"><a href=""><img src="trash-solid.svg" alt=""
+                    style="width: 30%;margin-top: 10%;"></a></td>
+              <td style="width: 10%;"><input class="form-control" value="1" type="text"
+                  aria-label="default input example" style="width: 70%;padding: 5%;"></td>
+              <td class="normal" style="width: 10%;">
+                <p style="margin-top: 8%;">0</p>
+              </td>
+              <td class="normal" style="width: 15%;">
+                <p style="margin-top: 13%;">$1000</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <button type="button" class="btn btn-success" style="border-radius: 0;width: 100%;">Proceed to checkout</button>
+        <div class="card" style="width: 100%;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <p>Total product</p>
+              <p style="font-weight: bold;">$14000</p>
+            </li>
+            <li class="list-group-item">
+              <p>Shipping</p>
+              <p style="font-weight: bold;color: darkgreen;">Free shipping</p>
+            </li>
+            <li class="list-group-item">
+              <p>Total tax</p>
+              <p style="font-weight: bold;">$0</p>
+            </li>
+            <li class="list-group-item">
+              <p>Total</p>
+              <p style="font-weight: bold;">$14000</p>
+            </li>
+            <li class="list-group-item" style="padding: 3%;margin-top: 10%;">
+              <input class="form-control" type="text" placeholder="Coupon code" aria-label="default input example"
+                style="width: 60%;">
+              <button class="btn btn-success" style="width: 40%;border-radius: 2%;">Apply</button>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="a container-fluid d-flex justify-content-lg-between justify-content-md-around">
+        <button type="button" class="button1 btn btn-secondary" ><img
+            src="arrow-left-solid.svg" alt="" style="width: 15%;"> Continute shopping</button>
+        <button type="button" class="button1 btn btn-secondary" ><img
+            src="arrows-rotate-solid.svg" alt="" style="width: 15%;"> Update cart</button>
+      </div>
+    </div>
+
+    <footer class="container-fluid" style="margin-top: 9%;">
+      <div class="row row-cols-md-3 row-cols-sm-2 row-cols-lg-5">
+        <div class="col">
+          <h5>SUPPORT</h5>
+          <p>THIẾT KẾ WEB ĐÁP ỨNG MỌI THIẾT BỊ</p>
+          <img src="a.png" alt="" style="width: 10%;height: auto;">123456789 <br>
+          <img src="a.png" alt="" style="width: 10%;height: auto;">a@a.a
+        </div>
+        <div class="col">
+          <h5>Shop</h5>
+          <hr>
+          <p>product</p>
+          <p>product</p>
+          <p>product</p>
+          <p>product</p>
+          <p>product</p>
+        </div>
+        <div class="col">
+          <h5>INFORMATION</h5>
+          <hr>
+          <p>info</p>
+          <p>info</p>
+          <p>info</p>
+          <p>info</p>
+        </div>
+        <div class="col">
+          <h5>MY ACCCOUNT</h5>
+          <hr>
+          <p>my account</p>
+          <p>my account</p>
+          <p>my account</p>
+          <p>my account</p>
+          <p>my account</p>
+        </div>
+        <div class="col">
+          <h5>EMAIL</h5>
+          <hr>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+          </div>
+          <button type="button" class="btn btn-success btn-md" style="border-radius: 0;width: 100%;">SUBSCRIBE</button>
+          <button type="button" class="btn btn-secondary"
+            style="width: 20%;border-radius: 100%;aspect-ratio: 10/10;margin-top: 4%;margin-right: 3%;"><img
+              src="twitter.svg" alt=""></button>
+          <button type="button" class="btn btn-secondary"
+            style="width: 20%;border-radius: 100%;aspect-ratio: 10/10;margin-top: 4%;margin-right: 3%;"><img
+              src="twitter.svg" alt=""></button>
+          <button type="button" class="btn btn-secondary"
+            style="width: 20%;border-radius: 100%;aspect-ratio: 10/10;margin-top: 4%;margin-right: 3%;"><img
+              src="twitter.svg" alt=""></button>
+          <button type="button" class="btn btn-secondary"
+            style="width: 20%;border-radius: 100%;aspect-ratio: 10/10;margin-top: 4%;margin-right: 3%;"><img
+              src="twitter.svg" alt=""></button>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
